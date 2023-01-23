@@ -15,8 +15,13 @@
     padding: 0px;
 }
 
+header {
+    padding: 5px;
+}
+
 h1, h2, h3 {
     font-family: 'Ubuntu', sans-serif;
+    color: #F24405;
 
 }
 
@@ -34,4 +39,20 @@ p {
     font-size: 1.2em;
     line-height: 1.20em;
     letter-spacing: 1px;
+}
+
+a {
+    font-weight: 600;
+    color: #D9831A;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #A64F03;
+    text-decoration: underline;
+}
+
+strong {
+    font-weight: 600;
+    color: #595952;
 }
