@@ -96,6 +96,8 @@ section blockquote {
     font-style: italic;
     max-width: 669px;
     margin: 2em;
+    padding: 4% 1%;
+    height: fit-content;
 }
 
 section div {
