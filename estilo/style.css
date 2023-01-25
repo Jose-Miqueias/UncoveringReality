@@ -126,3 +126,24 @@ section div {
 footer {
     background-color: var(--cor02);
 }
+
+.footer-elements { 
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+.footer-links a {
+    display: block;
+    padding: 8px;
+    font-family: 'Source Sans Pro', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer p#autoria {
+    color: #D8D9D7;
+    background-color: black;
+    margin: 0px;
+    padding: 4px;
+    font-size: 0.7em;
+    text-align: center;
+}
