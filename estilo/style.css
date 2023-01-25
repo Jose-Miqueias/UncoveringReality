@@ -23,7 +23,7 @@ nav {
 }
 
 nav > a {
-    color: #595952;
+    color: var(--cor02);
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
     font-weight: 500;
     margin: 0px 6px 0px 6px;
@@ -38,7 +38,7 @@ main {
 
 h1, h2, h3 {
     font-family: 'Ubuntu', 'Times New Roman', Times, serif;
-    color: #F24405;
+    color: var(--cor05);
 
 }
 
@@ -65,18 +65,18 @@ p {
 
 a {
     font-weight: 600;
-    color: #D9831A;
+    color: var(--cor03);
     text-decoration: none;
 }
 
 a:hover {
-    color: #A64F03;
+    color: var(--cor04);
     text-decoration: underline;
 }
 
 strong {
     font-weight: 600;
-    color: #595952;
+    color: var(--cor02);
 }
 
 main p {
@@ -121,4 +121,8 @@ section div {
 .main-text {
     padding: 0px;
     min-width: 400px;
+}
+
+footer {
+    background-color: var(--cor02);
 }
