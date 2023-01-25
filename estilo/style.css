@@ -15,10 +15,6 @@
     padding: 0px;
 }
 
-header {
-    margin-bottom: 7em;
-}
-
 nav {
     text-align: center;
     padding: 15px;
@@ -36,6 +32,8 @@ nav > a {
 
 main {
     padding: 4%;
+    max-width: 1500px;
+    margin: auto;
 }
 
 h1, h2, h3 {
@@ -96,7 +94,7 @@ section p {
 section blockquote {
     font-size: 1.2em;
     font-style: italic;
-    max-width: 800px;
+    max-width: 669px;
     margin: 2em;
 }
 
@@ -120,4 +118,5 @@ section div {
 
 .main-text {
     padding: 0px;
+    min-width: 400px;
 }
