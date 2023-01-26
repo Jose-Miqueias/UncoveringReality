@@ -129,6 +129,12 @@ section div {
     min-width: 400px;
 }
 
+.main-img {
+    background-color: var(--cor01);
+    padding: 1em 0em;
+    border-radius: 17px;
+}
+
 footer {
     background-color: var(--cor02);
 }
