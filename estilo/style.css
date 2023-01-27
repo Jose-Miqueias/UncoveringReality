@@ -9,6 +9,10 @@
     --cor03: #D9831A;
     --cor04: #A64F03;
     --cor05: #F24405;
+
+    --fonte-padrao: 'Source Sans Pro', Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-destaque: 'Ubuntu', 'Times New Roman', Times, serif;
+    --fonte-citação: 'Share Tech Mono', monospace;
 }
 
 * {
@@ -33,12 +37,13 @@ nav > a {
 
 main {
     padding: 4%;
+    min-width: 280px;
     max-width: 1500px;
     margin: auto;
 }
 
 h1, h2, h3 {
-    font-family: 'Ubuntu', 'Times New Roman', Times, serif;
+    font-family: var(--fonte-destaque);
     color: var(--cor05);
 
 }
@@ -56,7 +61,7 @@ h2 {
 }
 
 p {
-    font-family: 'Source Sans Pro', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--fonte-padrao);
     font-weight: 400;
     font-size: 1.3em;
     line-height: 1.20em;
@@ -93,7 +98,7 @@ section p {
 }
 
 section blockquote {
-    font-family: 'Share Tech Mono', monospace;
+    font-family: var(--fonte-citação);
     font-size: 1.2em;
     font-style: italic;
     max-width: 669px;
@@ -116,7 +121,8 @@ section div {
 }
 .intro img {
     display: block;
-    max-width: 900px;
+    width: 100%;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -127,12 +133,6 @@ section div {
 .main-text {
     padding: 0px;
     min-width: 400px;
-}
-
-.main-img {
-    background-color: var(--cor01);
-    padding: 1em 0em;
-    border-radius: 17px;
 }
 
 footer {
