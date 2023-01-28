@@ -51,7 +51,7 @@ main {
     margin: auto;
 } 
 
-h1, h2, h3 {
+h1, h2 {
     font-family: var(--fonte-destaque);
     color: var(--cor05);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.267);
@@ -123,6 +123,10 @@ section blockquote {
     margin: 2em;
     padding: 4% 1%;
     height: fit-content;
+}
+
+main abbr {
+    text-decoration: none;
 }
 
 section div {
