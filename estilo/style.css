@@ -188,4 +188,20 @@ footer p#autoria {
     .illusion, .cave, .uncov_real {
         display: block;
     }
+
+    .main-text {
+        min-width: 100px;
+        margin: 0px;
+    }
+
+    blockquote {
+        min-width: 100px;
+    }
+
+}
+
+@media (max-width: 373px) {
+    nav a {
+        margin: 0px;
+    }
 }
