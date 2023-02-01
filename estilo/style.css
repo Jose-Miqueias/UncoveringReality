@@ -116,13 +116,15 @@ section p {
 }
 
 section blockquote {
+    position: absolute;
     font-family: var(--fonte-citação);
     font-size: 1.2em;
     font-style: italic;
-    max-width: 669px;
-    margin: 2em;
-    padding: 4% 1%;
+    width: 100%;
     height: fit-content;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 main abbr {
@@ -154,7 +156,13 @@ section div {
 
 .main-text {
     padding: 0px;
-    min-width: 400px;
+    width: 50%;
+}
+
+.citacao {
+    position: relative;
+    margin: 2em;
+    width: 50%;
 }
 
 footer {
