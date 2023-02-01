@@ -120,11 +120,21 @@ section blockquote {
     font-family: var(--fonte-citação);
     font-size: 1.2em;
     font-style: italic;
+    text-align: center;
     width: 100%;
     height: fit-content;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid var(--cor01);
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.308);
+
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+div#cit_cave2 {
+    display: none;
 }
 
 main abbr {
@@ -198,12 +208,29 @@ footer p#autoria {
     }
 
     .main-text {
-        min-width: 100px;
+        width: 100%;
+        margin: 30px 0px;
+    }
+
+    .citacao {
+        width: 100%;
         margin: 0px;
     }
 
-    blockquote {
-        min-width: 100px;
+    section blockquote {
+        position: relative;
+        width: 80%;
+        transform: translate(0);
+        left: 0px;
+        top: 0px;
+    }
+
+    div#cit_cave1 {
+        display: none;
+    }
+
+    div#cit_cave2 {
+        display: block;
     }
 
 }
