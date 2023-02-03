@@ -74,7 +74,7 @@ p {
     font-family: var(--fonte-padrao);
     font-weight: 400;
     font-size: 1.3em;
-    line-height: 1.30em;
+    line-height: 1.6em;
     letter-spacing: 1px;
     padding: 20px 0px 50px 0px;
 }
@@ -104,7 +104,7 @@ a:hover {
 
 strong {
     font-weight: 600;
-    color: var(--cor04);
+    color: var(--cor03);
 }
 
 section {
@@ -145,19 +145,38 @@ section div {
     margin: 2em;
 }
 
-.illusion, .cave, .uncov_real {
-    display: flex;
-}
-
 .intro p {
     margin: auto;
     max-width: 1000px;
 }
-.intro img {
-    display: block;
-    width: 100%;
-    max-width: 1000px;
-    margin: auto;
+
+.img-fundo {
+    height: 58vh;
+    margin: 230px -202px;
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.301);
+}
+
+div#f1 {
+    background-image: url('../imagens/sunset-1.jpg');
+    background-position: top center;
+}
+
+div#f2 {
+    background-image: url('../imagens/sunset-2.jpg');
+    background-position: center center;
+}
+
+div#f3 {
+    background-image: url('../imagens/butterfly.jpg');
+    background-position: right center;
+}
+
+.illusion, .cave, .uncov_real {
+    display: flex;
 }
 
 .uncov_real p {
