@@ -168,11 +168,11 @@ div#f1 {
 
 div#f2 {
     background-image: url('../imagens/sunset-2.jpg');
-    background-position: center center;
+    background-position: right center;
 }
 
 div#f3 {
-    background-image: url('../imagens/butterfly.jpg');
+    background-image: url('../imagens/sunset-3.jpg');
     background-position: right center;
 }
 
