@@ -45,10 +45,7 @@ nav > a:hover {
 }
 
 main {
-    padding: 4%;
-    min-width: 280px;
-    max-width: 1500px;
-    margin: auto;
+    
 } 
 
 h1, h2 {
@@ -108,7 +105,10 @@ strong {
 }
 
 section {
-    padding-bottom: 7em;
+    padding: 4%;
+    min-width: 280px;
+    max-width: 1500px;
+    margin: auto;
 }
 
 section p {
@@ -152,7 +152,8 @@ section div {
 
 .img-fundo {
     height: 58vh;
-    margin: 230px -202px;
+    margin-top: 8em;
+    margin-bottom: 22em;
     background-color: gray;
     background-repeat: no-repeat;
     background-size: cover;
