@@ -100,8 +100,8 @@ a:hover {
 }
 
 strong {
-    font-weight: 600;
-    color: var(--cor03);
+    font-weight: bolder;
+    color: var(--cor02);
 }
 
 section {
@@ -113,6 +113,7 @@ section {
 
 section p {
     max-width: 800px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.466);
 }
 
 section blockquote {
@@ -153,7 +154,7 @@ section div {
 .img-fundo {
     height: 58vh;
     margin-top: 8em;
-    margin-bottom: 22em;
+    margin-bottom: 13em;
     background-color: gray;
     background-repeat: no-repeat;
     background-size: cover;
@@ -197,6 +198,7 @@ div#f3 {
 
 footer {
     background-color: var(--cor02);
+    margin-top: 20em;
 }
 
 .footer-elements { 
@@ -255,8 +257,16 @@ footer p#autoria {
 
 }
 
-@media (max-width: 373px) {
+@media (max-width: 500px) {
     nav a {
         margin: 0px;
+    }
+
+    .img-fundo {
+        display: none;
+    }
+
+    blockquote {
+        background-image: url('../imagens/sunset-2.jpg');
     }
 }
