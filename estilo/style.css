@@ -34,7 +34,7 @@ nav {
 nav > a {
     color: var(--cor02);
     font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     padding: 10px;
     margin: 0px 6px 0px 6px;
     border-radius: 10px;
@@ -117,7 +117,6 @@ section {
 
 section p {
     max-width: 800px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.466);
 }
 
 section blockquote {
@@ -128,10 +127,8 @@ section blockquote {
     text-align: center;
     width: 100%;
     height: fit-content;
-    padding: 20px;
+    padding: 10px;
     margin: auto;
-    border: 1px solid var(--cor01);
-    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.308);
 
     left: 50%;
     top: 50%;
@@ -190,7 +187,7 @@ div#f3 {
 }
 
 .main-text {
-    padding: 0px;
+    padding: 0;
     width: 50%;
 }
 
@@ -268,9 +265,5 @@ footer p#autoria {
 
     .img-fundo {
         display: none;
-    }
-
-    blockquote {
-        background-image: url('../imagens/sunset-2.jpg');
     }
 }
