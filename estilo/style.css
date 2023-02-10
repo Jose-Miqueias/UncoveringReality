@@ -25,6 +25,7 @@ body {
 }
 
 nav {
+    background-color: rgba(255, 255, 255, 0.782);
     text-align: center;
     border: 0.5px solid rgba(0, 0, 0, 0.336);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.356);
@@ -49,8 +50,31 @@ nav > a:hover {
 }
 
 main {
-    
 } 
+
+section {
+    height: 98vh;
+}
+
+.intro {
+    height: 93vh;
+    background-color: lightgray;
+    background: url('https://img.freepik.com/free-photo/fantastic-blue-sky_1203-1929.jpg?w=1380&t=st=1676039429~exp=1676040029~hmac=5967613df82836b47f90e82bb947b311c73b4f308feeda459b21b53db830a027') center center fixed;
+    background-size: cover;
+}
+
+.cave {
+    background-color: lightgray;
+    background: url('../imagens/adventurous-adult-man.jpg') right bottom fixed;
+    background-size: cover;
+}
+
+.main-container  {
+    padding: 20vh 2vh;
+    min-width: 280px;
+    max-width: 1500px;
+    margin: auto;
+}
 
 h1, h2 {
     font-family: var(--fonte-destaque);
@@ -63,7 +87,7 @@ h1 {
     font-size: 1.7em;
 }
 
-.intro > h1 {
+div#intro > h1 {
     text-align: center;
 }
 
@@ -85,6 +109,18 @@ main p {
     text-indent: 30px;
 }
 
+.cave p {
+    color: white;
+}
+
+
+div#uncov_real p {
+    padding-bottom: 10px;
+}
+
+.main-container p {
+    max-width: 800px;
+}
 
 a {
     font-weight: 600;
@@ -108,18 +144,22 @@ strong {
     color: var(--cor02);
 }
 
-section {
-    padding: 4%;
-    min-width: 280px;
-    max-width: 1500px;
-    margin: auto;
+.main-container div {
+    margin: 2em;
 }
 
-section p {
-    max-width: 800px;
+.main-text {
+    padding: 0;
+    width: 50%;
 }
 
-section blockquote {
+div#cave .main-text {
+    background-color: rgba(89, 89, 82, 0.69);
+    padding: 2em;
+    border-radius: 15px;
+}
+
+.main-container blockquote {
     position: absolute;
     font-family: var(--fonte-citação);
     font-size: 1.2em;
@@ -135,6 +175,11 @@ section blockquote {
     transform: translate(-50%, -50%);
 }
 
+div#cave blockquote {
+    background-color: rgba(89, 89, 82, 0.69);
+    color: rgba(255, 255, 255, 0.835);
+}
+
 div#cit_cave2 {
     display: none;
 }
@@ -143,52 +188,13 @@ main abbr {
     text-decoration: none;
 }
 
-section div {
-    margin: 2em;
-}
-
-.intro p {
+div#intro p {
     margin: auto;
     max-width: 1000px;
 }
 
-.img-fundo {
-    height: 58vh;
-    margin-top: 8em;
-    margin-bottom: 13em;
-    background-color: gray;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.301);
-}
-
-div#f1 {
-    background-image: url('../imagens/sunset-1.jpg');
-    background-position: top center;
-}
-
-div#f2 {
-    background-image: url('../imagens/sunset-2.jpg');
-    background-position: right center;
-}
-
-div#f3 {
-    background-image: url('../imagens/sunset-3.jpg');
-    background-position: right center;
-}
-
-.illusion, .cave, .uncov_real {
+div#illusion, div#cave, div#uncov_real {
     display: flex;
-}
-
-.uncov_real p {
-    padding-bottom: 10px;
-}
-
-.main-text {
-    padding: 0;
-    width: 50%;
 }
 
 .citacao {
@@ -226,8 +232,12 @@ footer p#autoria {
 
 
 @media (max-width: 840px) {
-    .illusion, .cave, .uncov_real {
+    div#illusion, div#cave, div#uncov_real {
         display: block;
+    }
+
+    .main-container div {
+        margin: 0;
     }
 
     .main-text {
@@ -240,7 +250,7 @@ footer p#autoria {
         margin: 0px;
     }
 
-    section blockquote {
+    .main-container blockquote {
         position: relative;
         width: 80%;
         transform: translate(0);
@@ -259,11 +269,10 @@ footer p#autoria {
 }
 
 @media (max-width: 500px) {
+    section, .intro {
+        height: auto;
+    }
     nav a {
         margin: 0px;
-    }
-
-    .img-fundo {
-        display: none;
     }
 }
