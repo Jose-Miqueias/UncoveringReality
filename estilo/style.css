@@ -8,7 +8,7 @@
     --cor02: #595952;
     --cor03: #D9831A;
     --cor04: #A64F03;
-    --cor05: #F24405;
+    --cor05: ;
 
     --fonte-padrao: 'Source Sans Pro', Verdana, Geneva, Tahoma, sans-serif;
     --fonte-destaque: 'Ubuntu', 'Times New Roman', Times, serif;
@@ -49,9 +49,6 @@ nav > a:hover {
     transition-duration: 0.5s;
 }
 
-main {
-} 
-
 section {
     height: 98vh;
 }
@@ -59,14 +56,18 @@ section {
 .intro {
     height: 93vh;
     background-color: lightgray;
-    background: url('https://img.freepik.com/free-photo/fantastic-blue-sky_1203-1929.jpg?w=1380&t=st=1676039429~exp=1676040029~hmac=5967613df82836b47f90e82bb947b311c73b4f308feeda459b21b53db830a027') center center fixed;
+    background: url('https://img.freepik.com/free-photo/landscape-mountains-black-white_119272-90.jpg?w=1380&t=st=1676048983~exp=1676049583~hmac=fa2ab55571303ae90332c5241ab467f830557be7f067b9662d29f36deab92229') center center fixed;
     background-size: cover;
 }
 
 .cave {
     background-color: lightgray;
-    background: url('../imagens/adventurous-adult-man.jpg') right bottom fixed;
+    background: url('https://img.freepik.com/free-photo/field-with-dramatic-scene-background_9083-8064.jpg?w=1060&t=st=1676319535~exp=1676320135~hmac=3dd7f69a2e916c06829581505069eacc3b07427adda5cc6fe4d0325178a9d9f3') bottom center fixed;
     background-size: cover;
+}
+
+.intro, .cave {
+    box-shadow: inset 0px -2px 2px rgba(0, 0, 0, 0.352);
 }
 
 .main-container  {
@@ -89,6 +90,7 @@ h1 {
 
 div#intro > h1 {
     text-align: center;
+    margin-bottom: 2em;
 }
 
 h2 {
@@ -109,7 +111,16 @@ main p {
     text-indent: 30px;
 }
 
-.cave p {
+div#intro p {
+    margin: auto;
+    max-width: 1000px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.52);
+    padding: 20px 40px;
+    border-bottom: 1px solid var(--cor04);
+}
+
+div#cave p {
     color: white;
 }
 
@@ -141,7 +152,7 @@ a:hover {
 
 strong {
     font-weight: bolder;
-    color: var(--cor02);
+    color: var(--cor03);
 }
 
 .main-container div {
@@ -188,11 +199,6 @@ main abbr {
     text-decoration: none;
 }
 
-div#intro p {
-    margin: auto;
-    max-width: 1000px;
-}
-
 div#illusion, div#cave, div#uncov_real {
     display: flex;
 }
@@ -221,6 +227,10 @@ footer {
     font-family: 'Source Sans Pro', Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.footer-links a:hover {
+    color: white;
+}
+
 footer p#autoria {
     color: #D8D9D7;
     background-color: black;
@@ -231,7 +241,18 @@ footer p#autoria {
 }
 
 
+
+
+
+
+
+
 @media (max-width: 840px) {
+
+    section {
+        padding: 7vh 2vh;
+    }
+
     div#illusion, div#cave, div#uncov_real {
         display: block;
     }
@@ -241,8 +262,11 @@ footer p#autoria {
     }
 
     .main-text {
-        width: 100%;
-        margin: 30px 0px;
+        width: 97%;
+    }
+
+    div#cave .main-text {
+        padding: 10px;
     }
 
     .citacao {
@@ -251,6 +275,7 @@ footer p#autoria {
     }
 
     .main-container blockquote {
+        margin-top: 40px;
         position: relative;
         width: 80%;
         transform: translate(0);
@@ -266,13 +291,88 @@ footer p#autoria {
         display: block;
     }
 
+    div#intro, p {
+        padding: 10px;
+    }
+
 }
 
+
+
+
+
+
+
 @media (max-width: 500px) {
-    section, .intro {
+    section, .intro{
         height: auto;
     }
+    section {
+        padding: 7vh 0vh;
+        margin-bottom: 7em;
+    }
+
+    .intro {
+        background-position: bottom right;
+    }
+
+    .main-container{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    
+    div#cave .main-text {
+        padding: 0px;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    blockquote {
+        border-bottom: 1px solid var(--cor04);
+        font-size: 1em;
+    }
+
+    div#cave blockquote {
+        background-color: transparent;
+    }
+
+    h1, h2, h2 {
+        text-align: center;
+        margin-bottom: 1.7em;
+    }
+
+    div#cave h2 {
+        color: white;
+    }
+
+    p {
+        font-size: 1.1em;
+    }
+
+    div#intro p, div#cave p {
+        padding: 20px 10px;
+        background-color: rgba(0, 0, 0, 0.319);
+    }
+
+    div#intro p {
+        border: none;
+    }
+
+    div#intro  {
+        padding: 0px;
+    }
+
     nav a {
         margin: 0px;
+    }
+
+    .footer-links a {
+        font-size: 0.9em;
+    }
+    
+    .footer-elements img {
+        height: 100px;
+        width: 100x
     }
 }
