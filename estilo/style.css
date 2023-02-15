@@ -56,13 +56,13 @@ section {
 .intro {
     height: 93vh;
     background-color: lightgray;
-    background: url('https://img.freepik.com/free-photo/landscape-mountains-black-white_119272-90.jpg?w=1380&t=st=1676048983~exp=1676049583~hmac=fa2ab55571303ae90332c5241ab467f830557be7f067b9662d29f36deab92229') center center fixed;
+    background: url('../imagens/arvores-preto-branco-pc.jpg') center center fixed;
     background-size: cover;
 }
 
 .cave {
     background-color: lightgray;
-    background: url('https://img.freepik.com/free-photo/field-with-dramatic-scene-background_9083-8064.jpg?w=1060&t=st=1676319535~exp=1676320135~hmac=3dd7f69a2e916c06829581505069eacc3b07427adda5cc6fe4d0325178a9d9f3') bottom center fixed;
+    background: url('../imagens/field-pc.jpg') bottom center fixed;
     background-size: cover;
 }
 
@@ -95,6 +95,10 @@ div#intro > h1 {
 
 h2 {
     font-size: 1.6em;
+}
+
+div#cave h2 {
+    color: white;
 }
 
 p {
