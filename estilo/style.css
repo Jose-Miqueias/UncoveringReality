@@ -85,7 +85,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 1.7em;
+    font-size: 1.9em;
 }
 
 div#intro > h1 {
@@ -99,6 +99,10 @@ h2 {
 
 div#cave h2 {
     color: white;
+}
+
+h1 > br {
+    display: none;
 }
 
 p {
@@ -169,12 +173,12 @@ strong {
 }
 
 div#cave .main-text {
-    background-color: rgba(89, 89, 82, 0.69);
+    background-color: rgba(0, 0, 0, 0.60);
     padding: 2em;
     border-radius: 15px;
 }
 
-.main-container blockquote {
+blockquote {
     position: absolute;
     font-family: var(--fonte-citação);
     font-size: 1.2em;
@@ -191,7 +195,6 @@ div#cave .main-text {
 }
 
 div#cave blockquote {
-    background-color: rgba(89, 89, 82, 0.69);
     color: rgba(255, 255, 255, 0.835);
 }
 
@@ -251,7 +254,10 @@ footer p#autoria {
 
 
 
-@media (max-width: 840px) {
+@media screen and (max-width: 840px) {
+    section, .intro{
+        height: auto;
+    }
 
     section {
         padding: 7vh 2vh;
@@ -307,7 +313,7 @@ footer p#autoria {
 
 
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     section, .intro{
         height: auto;
     }
@@ -317,7 +323,7 @@ footer p#autoria {
     }
 
     .intro {
-        background-position: bottom right;
+        background-image: url('../imagens/arvores-preto-branco-mobile.jpg');
     }
 
     .main-container{
@@ -334,11 +340,17 @@ footer p#autoria {
 
     blockquote {
         border-bottom: 1px solid var(--cor04);
+        font-family: var(--fonte-padrao);
         font-size: 1em;
     }
 
     div#cave blockquote {
         background-color: transparent;
+    }
+
+    h1 {
+        padding: 0px 5px;
+        font-size: 1.6em;
     }
 
     h1, h2, h2 {
@@ -348,6 +360,14 @@ footer p#autoria {
 
     div#cave h2 {
         color: white;
+    }
+
+    .h-destaque {
+        border-bottom: 3px solid var(--cor04);
+    }
+
+    h1 > br {
+        display: initial;
     }
 
     p {
