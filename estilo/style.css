@@ -322,15 +322,23 @@ footer p#autoria {
         margin-bottom: 7em;
     }
 
-    .intro {
-        background-image: url('../imagens/arvores-preto-branco-mobile.jpg');
+    .intro, .cave {
+        background-attachment: local;
     }
+
+    .intro {
+        background-position: top center;
+    }
+
 
     .main-container{
         margin: 0px;
         padding: 0px;
     }
 
+    .main-container div {
+        margin: auto;
+    }
     
     div#cave .main-text {
         padding: 0px;
@@ -376,11 +384,15 @@ footer p#autoria {
 
     div#intro p, div#cave p {
         padding: 20px 10px;
-        background-color: rgba(0, 0, 0, 0.319);
+        background-color: rgba(0, 0, 0, 0.261);
     }
 
     div#intro p {
         border: none;
+    }
+
+    div#cave p {
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.39);
     }
 
     div#intro  {
